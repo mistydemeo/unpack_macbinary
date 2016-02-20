@@ -5,7 +5,7 @@ require 'macbinary_unpack/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "macbinary_unpack"
-  spec.version       = Macbinary::VERSION
+  spec.version       = MacBinary::VERSION
   spec.authors       = ["Misty De Meo"]
   spec.email         = ["mistydemeo@gmail.com"]
   spec.licenses      = ["kindest"]
