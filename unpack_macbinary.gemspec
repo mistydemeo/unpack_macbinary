@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'macbinary_unpack/version'
+require 'unpack_macbinary/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "macbinary_unpack"
+  spec.name          = "unpack_macbinary"
   spec.version       = MacBinary::VERSION
   spec.authors       = ["Misty De Meo"]
   spec.email         = ["mistydemeo@gmail.com"]
   spec.licenses      = ["kindest"]
 
   spec.summary       = %q{Tool to unpack MacBinary files into native Mac data/resource fork files.}
-  spec.homepage      = "https://github.com/mistydemeo/macbinary_unpack"
+  spec.homepage      = "https://github.com/mistydemeo/unpack_macbinary"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

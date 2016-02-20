@@ -6,7 +6,7 @@ include FileUtils
 
 require "slop"
 
-require "macbinary_unpack"
+require "unpack_macbinary"
 
 def which(cmd, path = ENV["PATH"])
   path.split(File::PATH_SEPARATOR).each do |p|
