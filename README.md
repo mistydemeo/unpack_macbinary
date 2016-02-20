@@ -19,6 +19,8 @@ Then install the gem using:
 
     $ gem install unpack_macbinary
 
+Note that, because this produces native Mac OS files, you can only use this tool on OS X.
+
 ## Usage
 
 Just provide this tool the names of the files to unpack:
