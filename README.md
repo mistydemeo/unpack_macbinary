@@ -6,7 +6,7 @@ Mac OS's HFS and HFS+ filesystems has a concept of file "forks"; each file has b
 The [MacBinary format](https://en.wikipedia.org/wiki/MacBinary) is a format designed to bundle files with both data and resource forks in a format which can be losslessly transferred to other filesystems; it was most widely used in the 1990s.
 
 However, if a Mac user should *receive* a MacBinary file, it's not straightforward to convert that file back into a native Mac OS file.
-This tool simplifie the process of turning a MacBinary file into a native Mac file by wrapping a tool from the [macutils](http://ibiblio.org/pub/linux/utils/compress/macutils.tar.gz) package.
+This tool simplifies the process of turning a MacBinary file into a native Mac file by wrapping a tool from the [macutils](http://ibiblio.org/pub/linux/utils/compress/macutils.tar.gz) package.
 
 ## Installation
 
