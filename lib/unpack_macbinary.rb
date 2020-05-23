@@ -1,3 +1,4 @@
+# typed: false
 require "unpack_macbinary/version"
 
 require "fileutils"

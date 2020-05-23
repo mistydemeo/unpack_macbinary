@@ -21,4 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", ">= 1.11"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_dependency "slop", "~> 4.2"
+  spec.add_development_dependency "sorbet"
+  spec.add_dependency "sorbet-runtime"
 end
