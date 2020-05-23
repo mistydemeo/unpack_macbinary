@@ -1,13 +1,19 @@
+# typed: strict
 require "unpack_macbinary/version"
 
 require "fileutils"
 
+require "sorbet-runtime"
+
 module MacBinary
+  extend T::Sig
+
   class MacunpackException < StandardError; end
 
+  sig {params(macbinary: String, target_dir: String).returns(T::Hash[Symbol, String])}
   def self.unpack macbinary, target_dir=Dir.pwd
     # macunpack always unpacks into the working directory
-    cd target_dir do
+    FileUtils.cd target_dir do
       # macunpack will sanitize the source filename if it contains spaces
       sanitized = File.basename(macbinary.gsub(" ", "_"), ".bin")
 
@@ -29,6 +35,7 @@ module MacBinary
     end
   end
 
+  sig {params(data_fork: String, resource_fork: String).void}
   def self.add_resource_fork data_fork, resource_fork
     FileUtils.cp resource_fork, "#{data_fork}/..namedfork/rsrc"
   end
